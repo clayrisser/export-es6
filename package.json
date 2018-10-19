@@ -1,6 +1,6 @@
 {
   "name": "export-es6",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "export es6 module in commonjs environment environment",
   "keywords": [
     "export-es6",

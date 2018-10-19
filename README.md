@@ -31,7 +31,7 @@ npm install --save export-es6
 ## Usage
 
 ```js
-// module.export = { hello: 'world' };
+// module.exports = { hello: 'world' };
 require('export-es6')(module, { hello: 'world' });
 ```
 
