@@ -27,7 +27,7 @@ npm install --save export-es6
 ## Usage
 
 ```js
-module.exports = require('export-es6')(require('./some-commonjs-module'));
+require('export-es6')(module, require('./some-commonjs-module'));
 ```
 
 

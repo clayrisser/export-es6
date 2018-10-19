@@ -1,9 +1,7 @@
-module.exports = function exportES6(commonjsModule) {
-  if (!commonjsModule.__esModule) {
-    commonjsModule = {
-      default: commonjsModule,
-      __esModule: true
-    };
-  }
+module.exports = function exportES6(exportedModule, commonjsModule) {
+  Object.defineProperty(exportedModule, '__esModule', {
+    value: true
+  });
+  exportedModule.exports = commonjsModule;
   return commonjsModule;
 };
