@@ -26,7 +26,9 @@ npm install --save export-es6
 
 ## Usage
 
-[Contribute](https://github.com/codejamninja/export-es6/blob/master/CONTRIBUTING.md) usage docs
+```js
+module.exports = require('export-es6')(require('./some-commonjs-module'));
+```
 
 
 ## Support
