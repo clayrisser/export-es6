@@ -2,7 +2,9 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/codejamninja/export-es6.svg?style=social&label=Stars)](https://github.com/codejamninja/export-es6)
 
-> export es6 module in commonjs environment environment
+> export es6 module in commonjs environment
+
+If the exported module is not an ES6 module it is converted to an ES6 module.
 
 Please ★ this repo if you found it useful ★ ★ ★
 
@@ -10,6 +12,8 @@ Please ★ this repo if you found it useful ★ ★ ★
 ## Features
 
 * Works in commonjs environment
+* Exports commonjs modules
+* Exports ES6 modules
 
 
 ## Installation
@@ -27,7 +31,8 @@ npm install --save export-es6
 ## Usage
 
 ```js
-require('export-es6')(module, require('./some-commonjs-module'));
+// module.export = { hello: 'world' };
+require('export-es6')(module, { hello: 'world' });
 ```
 
 

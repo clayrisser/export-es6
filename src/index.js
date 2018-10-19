@@ -1,7 +1,10 @@
-module.exports = function exportES6(exportedModule, commonjsModule) {
-  Object.defineProperty(exportedModule, '__esModule', {
+module.exports = function exportES6(exportedModule, commonjsExports) {
+  if (!commonjsExports.__esModule) {
+    commonjsExports = { default: commonjsExports };
+  }
+  Object.defineProperty(exportedModule.exports, '__esModule', {
     value: true
   });
-  exportedModule.exports = commonjsModule;
-  return commonjsModule;
+  exportedModule.exports = commonjsExports;
+  return exportedModule.exports;
 };
