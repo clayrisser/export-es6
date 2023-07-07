@@ -8,6 +8,7 @@ If the exported module is not an ES6 module it is converted to an ES6 module.
 
 Please ★ this repo if you found it useful ★ ★ ★
 
+![](assets/export-es6.png)
 
 ## Features
 
